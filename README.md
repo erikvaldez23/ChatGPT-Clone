@@ -25,12 +25,15 @@ cd ChatGPT-Clone
 ```
 
 ## **2. Backend Setup**
+Next, switch to backend directory
 ```bash
 cd backend
 ```
 
 Create a .env file to store the OpenAI API Key:
+```bash
 OPENAI_API_KEY=custom_api_key
+```
 
 Install backend dependencies:
 ```bash
@@ -43,9 +46,7 @@ npm start
 ```
 
 ## **3. Frontend Setup**
-Start in the projects root directory 
-
-Install frontend dependencies
+Within root directory, Install frontend dependencies
 ```bash
 npm install
 ```
@@ -54,19 +55,3 @@ Start react dev server:
 ```bash
 npm start
 ```
-
-ChatGPT-Clone/
-│
-├── backend/           # Express.js backend
-│   ├── server.js      # Backend server
-│   ├── .env           # Environment variables (not tracked in Git)
-│   └── package.json   # Backend dependencies
-│
-├── src/               # React frontend
-│   ├── components/    # React components
-│   ├── App.js         # Main App component
-│   └── index.js       # React entry point
-│
-├── .gitignore         # Ignored files
-├── README.md          # Project documentation
-└── package.json       # Frontend dependencies
