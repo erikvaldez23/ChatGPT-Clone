@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# ChatGPT Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a ChatGPT clone that provides a chatbot interface using the OpenAI API. It includes a React-based frontend and an Express.js backend.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Getting Started**
 
-### `npm start`
+Follow these instructions to set up and run the project locally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+Make sure you have the following tools installed on your machine:
+- **Node.js** (v16+)
+- **npm** (Node Package Manager)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## **1. Clone the Repository**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First, clone the repository to your local machine:
 
-### `npm run build`
+```bash
+git clone https://github.com/erikvaldez23/ChatGPT-Clone.git
+cd ChatGPT-Clone
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **2. Backend Setup**
+```bash
+cd backend
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a .env file to store the OpenAI API Key:
+OPENAI_API_KEY=custom_api_key
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install backend dependencies:
+```bash
+npm install
+```
 
-### `npm run eject`
+Start the backend server:
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## **3. Frontend Setup**
+Start in the projects root directory 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install frontend dependencies
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start react dev server:
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ChatGPT-Clone/
+│
+├── backend/           # Express.js backend
+│   ├── server.js      # Backend server
+│   ├── .env           # Environment variables (not tracked in Git)
+│   └── package.json   # Backend dependencies
+│
+├── src/               # React frontend
+│   ├── components/    # React components
+│   ├── App.js         # Main App component
+│   └── index.js       # React entry point
+│
+├── .gitignore         # Ignored files
+├── README.md          # Project documentation
+└── package.json       # Frontend dependencies
